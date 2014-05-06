@@ -21,6 +21,7 @@
 		9E2E6437188DA13900D6A93C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2E6419188DA13900D6A93C /* UIKit.framework */; };
 		9E2E643F188DA13900D6A93C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E643D188DA13900D6A93C /* InfoPlist.strings */; };
 		9E2E6441188DA13900D6A93C /* MeetUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E6440188DA13900D6A93C /* MeetUpTests.m */; };
+		9E2E644F188DE13B00D6A93C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E644E188DE13B00D6A93C /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		9E2E643C188DA13900D6A93C /* MeetUpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MeetUpTests-Info.plist"; sourceTree = "<group>"; };
 		9E2E643E188DA13900D6A93C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E2E6440188DA13900D6A93C /* MeetUpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetUpTests.m; sourceTree = "<group>"; };
+		9E2E644D188DE13B00D6A93C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		9E2E644E188DE13B00D6A93C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				9E2E6424188DA13900D6A93C /* AppDelegate.h */,
 				9E2E6425188DA13900D6A93C /* AppDelegate.m */,
 				9E2E6427188DA13900D6A93C /* Main.storyboard */,
+				9E2E644D188DE13B00D6A93C /* DetailViewController.h */,
+				9E2E644E188DE13B00D6A93C /* DetailViewController.m */,
 				9E2E642A188DA13900D6A93C /* ViewController.h */,
 				9E2E642B188DA13900D6A93C /* ViewController.m */,
 				9E2E642D188DA13900D6A93C /* Images.xcassets */,
@@ -252,6 +257,7 @@
 				9E2E642C188DA13900D6A93C /* ViewController.m in Sources */,
 				9E2E6426188DA13900D6A93C /* AppDelegate.m in Sources */,
 				9E2E6422188DA13900D6A93C /* main.m in Sources */,
+				9E2E644F188DE13B00D6A93C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

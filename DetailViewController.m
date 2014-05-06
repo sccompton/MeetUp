@@ -10,23 +10,49 @@
 
 @interface DetailViewController ()
 
+{
+    __weak IBOutlet UINavigationItem *navBarTitle;
+    __weak IBOutlet UILabel *rsvpLabel;
+    __weak IBOutlet UILabel *groupNameLabel;
+    __weak IBOutlet UILabel *forWhomLabel;
+    __weak IBOutlet UITextView *descriptionTextFieldLabel;
+    __weak IBOutlet UIButton *detailLinkButton;
+    
+    NSString *urlForWebView;
+}
+
 @end
 
 @implementation DetailViewController
+@synthesize event;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+/*- (IBAction)onURLPressed:(id)sender {
+    
+NSURL * webpage = [NSURL alloc]initWithString:urlLabel.text];
+UIApplication *app = [UIApplication sharedApplication];
+[app openURL:webpage];
+}*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    self.title = [NSString stringWithFormat:@"%@", event[@"yes_rsvp_count"]];
+    rsvpLabel.text = [NSString stringWithFormat:@"%@", event[@"maybe_rsvp_count"]];
+    groupNameLabel.text = event[@"group"][@"name"];
+    forWhomLabel.text = event[@"group"][@"who"];
+    
+    descriptionTextFieldLabel.text = event[@"description"];
+
+    if([event[@"event_url"] isEqualToString:@""])
+    {
+        detailLinkButton.alpha = 0;
+    } else {
+        detailLinkButton.alpha = 1;
+        urlForWebView = event[@"event_url"];
+    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning

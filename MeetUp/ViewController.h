@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
+
+@property NSString *name;
+@property NSString *rsvpCounts;
+@property NSString *hostInformation;
+@property NSString *description;
+@property NSString *url;
+@property NSString *forWhom;
+@property NSString *groupName;
 
 @end
